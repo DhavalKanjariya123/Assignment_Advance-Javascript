@@ -1,0 +1,40 @@
+<!-- Create a programme to hide/show the password?.
+ -->
+ 
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+    <form id="form">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <input onclick="show()" id="checkbox-password" type="checkbox">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+      
+ </body>
+ <script>
+    
+
+    // document.getElementById("password").innerHTML=password;
+    // ("#checkbox-password").click(function () {
+    //     document.getElementById("password").innerHTML=password.show;
+    // })
+
+    function show() {
+        let password1=document.getElementById("password");
+        document.getElementById("password").innerHTML=password1; 
+    }
+ </script>
+ </html>
