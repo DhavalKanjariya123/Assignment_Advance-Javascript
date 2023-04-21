@@ -1,5 +1,5 @@
 
-
+//create function
 function clk() {
     var em = document.getElementById("emailaddress").value;
     var pass = document.getElementById("passwprd").value;

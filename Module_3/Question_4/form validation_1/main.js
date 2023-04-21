@@ -1,5 +1,5 @@
 
-
+//create function
 function clk() {
 
     if (document.formdetail.emailaddress.value== "") {
