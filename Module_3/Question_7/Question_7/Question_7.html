@@ -1,0 +1,21 @@
+<form id="myForm">
+  <!-- Your form fields go here -->
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <!-- Submit button -->
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // This line prevents the form from submitting
+
+    // Here, you can add any custom logic to handle the form data or make AJAX calls.
+    // For this example, let's just show an alert to demonstrate that the submission is blocked.
+
+    // Display an alert
+    alert("Form submission prevented. Add your custom logic here.");
+  });
+</script>
+

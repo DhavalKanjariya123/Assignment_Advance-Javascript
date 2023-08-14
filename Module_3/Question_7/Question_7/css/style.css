@@ -1,0 +1,46 @@
+/* Your CSS styles for the header go here */
+
+/* For example: */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu-btn {
+  display: none; /* Hide the menu button on larger screens */
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide the navigation menu on smaller screens */
+    flex-direction: column;
+  }
+
+  .navbar.show {
+    display: flex; /* Show the navigation menu when the show class is added */
+  }
+
+  .menu-btn {
+    display: block; /* Show the menu button on smaller screens */
+  }
+}
